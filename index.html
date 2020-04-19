@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <img id="logo" src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-png-transparent.png"
+      alt="Starbucks logo">
+    <header>
+      <h1 id="title">Starbucks Survey</h1>
+      <p id="description">We value your feedback.<br>
+        Please take a few moments to fill out this form so that we may keep on
+        improving our services</p>
+    </header>
+    <form action="" id="survey-form">
+      <div class="entry">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="entry">
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="entry">
+        <label id="number-label" for="age">Age: (Optional)</label>
+        <input id="number" type="number" min="0" max="99" placeholder="Enter your age">
+      </div>
+      <div class="entry">
+        <label>How often do you visit your local Starbucks store?</label>
+        <select id="dropdown" name="">
+          <option disabled selected value>Select</option>
+          <option value="1">Never</option>
+          <option value="2">Once a month</option>
+          <option value="3">Once a week</option>
+          <option value="4">2+ times a week</option>
+        </select>
+      </div>
+      <div class="entry">
+        <label>Would you recommend Starbucks to a friend?</label>
+        <label><input type="radio" name="user-recommend" value="Yes" class="input-radio" checked>Yes</label>
+        <label><input type="radio" name="user-recommend" value="Maybe" class="input-radio">Maybe</label>
+        <label><input type="radio" name="user-recommend" value="No" input-radio">No<label>
+      </div>
+      <div class="entry">
+        <label>Which of these beverages do you enjoy?</label>
+        <label><input name="prefer" value="latte" type="checkbox" class="input-checkbox">Latte</label>
+        <label><input name="prefer" value="cappuccino" type="checkbox" class="input-checkbox">Cappuccino</label>
+        <label><input name="prefer" value="americano" type="checkbox" class="input-checkbox">Americano</label>
+        <label><input name="prefer" value="flat-white" type="checkbox" class="input-checkbox">Flat White</label>
+        <label><input name="prefer" value="mocha" type="checkbox" class="input-checkbox">Mocha</label>
+        <label><input name="prefer" value="hot-chocolate" type="checkbox" class="input-checkbox">Hot Chocolate</label>
+        <label><input name="prefer" value="tea" type="checkbox" class="input-checkbox">Tea</label>
+      </div>
+      <div class="entry">
+        <label>Any further comments?</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      </div>
+      <div class="entry">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
